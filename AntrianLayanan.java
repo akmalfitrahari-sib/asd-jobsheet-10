@@ -66,7 +66,16 @@ public class AntrianLayanan {
             data[index].tampilkanData();
         }
     }
- 
+    
+    public void LihatAkhir() {
+    if (!isEmpty()) {
+            System.out.println("Antrian paling belakang:");
+            data[rear].tampilkanData();
+        } else {
+            System.out.println("Antrian kosong");
+        }
+    }
+
     public int getJumlahHarian() {
         return size;
     }
